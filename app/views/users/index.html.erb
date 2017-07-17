@@ -1,0 +1,9 @@
+<h1>All Users</h1>
+
+<ul>
+  <% @users.each do |user| %>
+    <li>
+      <%= user.username %> | <a href=<%= edit_user_path(user.id) %>>Edit</a>
+    </li>
+  <% end %>
+</ul>
